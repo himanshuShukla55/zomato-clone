@@ -6,9 +6,9 @@ const HomeNavbar = () => {
   const [hideNav, setHideNav] = useState(true);
   return (
     <div
-      className={`relative z-20 ${
+      className={`absolute z-20 ${
         hideNav ? "text-white" : "text-black bg-white"
-      } flex flex-col gap-20 lg:max-w-6xl lg:flex-row lg:items-center`}
+      } flex flex-col gap-20 w-full lg:max-w-6xl lg:flex-row lg:items-center`}
     >
       <VscThreeBars
         className="text-2xl lg:hidden mx-3 my-5"
